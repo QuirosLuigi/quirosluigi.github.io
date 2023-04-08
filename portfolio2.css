@@ -1527,8 +1527,8 @@
   border-radius: 50px;
 }
 .portfolio2-text096 {
-  top: 8px;
-  left: 115px;
+  top: 6px;
+  left: -120px;
   color: rgba(255, 255, 255, 1);
   height: auto;
   position: absolute;
@@ -1543,8 +1543,8 @@
   text-decoration: none;
 }
 .portfolio2-text098 {
-  top: 8px;
-  left: 375px;
+  top: 6px;
+  left: 123px;
   color: rgba(255, 255, 255, 1);
   height: auto;
   position: absolute;
@@ -1559,8 +1559,8 @@
   text-decoration: none;
 }
 .portfolio2-text100 {
-  top: 8px;
-  left: 550px;
+  top: 6px;
+  left: 284px;
   color: rgba(255, 255, 255, 1);
   height: auto;
   position: absolute;
@@ -1575,8 +1575,8 @@
   text-decoration: none;
 }
 .portfolio2-text102 {
-  top: 8px;
-  left: 215px;
+  top: 6px;
+  left: -23px;
   color: rgba(255, 255, 255, 1);
   height: auto;
   position: absolute;
@@ -1590,30 +1590,22 @@
   font-stretch: normal;
   text-decoration: none;
 }
-
-.portfolio2-rectangle1 {
-  /*top: 0px;
-  left: 792px;*/
-  display: block;
-  background-color: #00e472;
-  left: 120%;
+.portfolio2-text6969{
+  top: 6px;
+  left: 471px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
   position: absolute;
-  margin-left: auto;
-  width: 191px;
-  height: 50px;
-  border-color: transparent;
-  border-radius: 10px;
-    color: rgba(255, 255, 255, 1);
-    font-size: 24px;
-    align-self: auto;
-    font-style: Bold;
-    text-align: center;
-    font-family: DM Sans;
-    font-weight: 700;
-    line-height: normal;
-    font-stretch: normal;
-    text-decoration: none;
-  }
+  font-size: 24px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: center;
+  font-family: DM Sans;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
 .portfolio2-text106 {
   /*top: 12px;
   left: 1430px;*/
@@ -1657,8 +1649,8 @@
 .portfolio2-blackand-white-collection1 {
   display: block;
   position:absolute;
-  top: -25px;
-  left: -500px;
+  top: 0px;
+  left: -50px;
   width: 60.259735107421875px;
   height: 51.55558776855469px;
   box-sizing: border-box;
@@ -1720,8 +1712,8 @@
 .portfolio2-text108 {
   display: block;
   position: absolute;
-  top: -23px;
-  left: -430px;
+  top: 3px;
+  left: 20px;
   color: rgba(255, 255, 255, 1);
   width: 199px;
   height: auto;
