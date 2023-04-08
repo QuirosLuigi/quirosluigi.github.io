@@ -1,10 +1,12 @@
 .portfolio2-container {
   min-height: 100vh;
+  min-width: 100vw;
   background-color: #2B2F30;
   
 }
 .portfolio2-portfolio2 {
-  max-width: 1500px;
+  max-width: 1450px;
+  width:100vw;
   height: 6084px;
   display: block;
   margin-left: auto;
@@ -1306,6 +1308,7 @@
   text-decoration: none;
 }
 .portfolio2-text081 {
+  margin-top: 3vh;
   top: 283px;
   left: 686px;
   color: rgba(171, 173, 175, 1);
@@ -1323,16 +1326,18 @@
   text-decoration: none;
 }
 .portfolio2-hero-section {
-  top: 124px;
-  left: 82px;
-  width: 1324px;
-  height: 601px;
+  /*(top: 110px;
+  left: 82px;*/
+  margin-top: 8%;
+  width: 70vw;
+  height: 48.6vh;
   display: flex;
   padding: 0;
   position: absolute;
   align-self: auto;
   box-sizing: border-box;
   align-items: flex-start;
+  overflow: hidden;
   flex-shrink: 1;
   border-color: transparent;
   border-style: none;
@@ -1342,7 +1347,7 @@
   margin-bottom: 0;
   flex-direction: row;
   justify-content: flex-start;
-  background-color: transparent;
+  background-color: #252829;
 }
 .portfolio2-hero-left {
   top: 69px;
