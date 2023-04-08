@@ -1,7 +1,7 @@
 .portfolio2-container {
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #2B2F30;
+  background-color: #2b2f30;
   
 }
 .portfolio2-portfolio2 {
@@ -1356,8 +1356,8 @@
   
 }
 .portfolio2-hero-left {
-  top: 69px;
-  left: 0px;
+  top: 89px;
+  left: 60px;
   width: 795px;
   height: 373px;
   display: flex;
@@ -1465,7 +1465,7 @@
 }
 .portfolio2-nobg1 {
   top: 0px;
-  left: 777px;
+  left: 857px;
   width: 547px;
   height: 601px;
   position: absolute;
