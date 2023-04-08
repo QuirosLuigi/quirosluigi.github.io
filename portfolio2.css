@@ -1590,40 +1590,40 @@
   font-stretch: normal;
   text-decoration: none;
 }
-.portfolio2-text104 {
-  top: 8px;
-  left: 362px;
-  color: rgba(255, 255, 255, 1);
-  height: auto;
-  position: absolute;
-  font-size: 24px;
-  align-self: auto;
-  font-style: Bold;
-  text-align: center;
-  font-family: DM Sans;
-  font-weight: 700;
-  line-height: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
+
 .portfolio2-rectangle1 {
   /*top: 0px;
   left: 792px;*/
   display: block;
-  margin-right: -60%;
+  background-color: #00e472;
+  left: 120%;
+  position: absolute;
   margin-left: auto;
   width: 191px;
   height: 50px;
   border-color: transparent;
   border-radius: 10px;
-}
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    align-self: auto;
+    font-style: Bold;
+    text-align: center;
+    font-family: DM Sans;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
 .portfolio2-text106 {
-  top: 12px;
-  left: 1430px;
+  /*top: 12px;
+  left: 1430px;*/
+  display: block;
+  top: 2.8%;
+  left: 91.8%;
+  position: relative;
   color: rgba(255, 255, 255, 1);
   width: 97px;
   height: auto;
-  position: absolute;
   font-size: 24px;
   align-self: auto;
   font-style: Medium;
@@ -1655,23 +1655,17 @@
   background-color: transparent;
 }
 .portfolio2-blackand-white-collection1 {
-  top: 0px;
-  left: 0px;
+  display: block;
+  position:absolute;
+  top: -25px;
+  left: -500px;
   width: 60.259735107421875px;
   height: 51.55558776855469px;
-  display: flex;
-  padding: 0;
-  position: absolute;
-  align-self: auto;
   box-sizing: border-box;
-  align-items: flex-start;
-  flex-shrink: 1;
   border-color: transparent;
   border-style: none;
   border-width: 0;
   border-radius: 0px 0px 0px 0px;
-  flex-direction: row;
-  justify-content: flex-start;
   background-color: transparent;
 }
 .portfolio2-vector {
@@ -1724,12 +1718,14 @@
   position: absolute;
 }
 .portfolio2-text108 {
-  top: 7px;
-  left: 69px;
+  display: block;
+  position: absolute;
+  top: -23px;
+  left: -430px;
   color: rgba(255, 255, 255, 1);
   width: 199px;
   height: auto;
-  position: absolute;
+  /*position: absolute;*/
   font-size: 36px;
   align-self: auto;
   font-style: Regular;
