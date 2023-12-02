@@ -1,460 +1,282 @@
+<!-- FILEPATH: /d:/Documents/GitHub/website2/index.html -->
+<!-- 
+    This is the HTML code for the index.html file of a portfolio website.
+    It includes the structure and styling for the different sections of the website, such as the header, introduction, experience, certifications, skills, and contact sections.
+    The code also includes a navigation bar, a timeline for displaying experience, and certification groups with images and descriptions.
+    The footer section contains the copyright information.
+-->
+<!-- FILEPATH: /d:/Documents/GitHub/website2/index.html -->
+<!-- 
+    This is the HTML code for the index.html file of a portfolio website.
+    It includes the structure and styling for the different sections of the website, such as the header, introduction, experience, certifications, skills, and contact sections.
+    The code also includes a navigation bar, a timeline for displaying experience, and certification groups with images and descriptions.
+    The footer section contains the copyright information.
+-->
 <!DOCTYPE html>
-<html lang="english">
-  <head>
-    <title>Quiros Portfolio</title>
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-<link rel="icon" href="icon_path" type="image/icon type">
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Existing styles */
+
+        body {
+            background-color: #6c7a89;
+            color: #e0e7e9;
+            font-family: 'Open Sans', sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        nav {
+            background-color: #a3c6c4;
+            height: 5vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #354649;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            background-color: #6c7a89;
+        }
+
+        section {
+            border-top: 1px solid #354649;
+            padding-top: 20px;
+            margin-left: 20px; /* Added left margin */
+        }
+
+        /* New styles for the vertical timeline effect */
+
+        .timeline {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 10px;
+            width: 2px;
+            height: 100%;
+            background-color: white;
+        }
+
+        .timeline-point {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            left: 0px;
+        }
+
+        .timeline li {
+            position: relative;
+            min-height: 50px;
+            margin-bottom: 50px;
+        }
+
+        .timeline li:before,
+        .timeline li:after {
+            content: '';
+            display: table;
+        }
+
+        .timeline li:after {
+            clear: both;
+        }
+
+        .timeline-content {
+            position: relative;
+            width: 50%;
+            padding: 20px;
+            background-color: #354649;
+            color: white;
+            border-radius: 10px;
+            margin-left: 120px; /* Updated: Increase the left spacing */
+            float: left; /* Updated: Align the content to the left */
+        }
+
+        .timeline-content h3,
+        .timeline-content p {
+            margin: 0;
+        }
+
+        /* New styles for the experience uls */
+        .timeline-content ul {
+            padding-left: 10px; /* Add left padding */
+            margin-left: 10px; /* Add left margin */
+        }
+
+        /* Responsive styles */
+
+        @media (max-width: 768px) {
+            .timeline-content {
+                width: 100%;
+                margin-left: 0;
+                float: none;
+            }
+        }
     </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
-
-      }
     </style>
-    <link rel="icon" href="public\playground_assets\luithumbsup11121-r79c-500h.png" type="image/icon type">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Salsa:wght@400&amp;display=swap"
-      data-tag="font"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div>
-      <link href="./portfolio2.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <!-- Top/Header section -->
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <div class="portfolio2-container">
-        <div class="portfolio2-portfolio2">
-          <div class="portfolio2-contact-us" id="portfolio2-contact-us">
-            <div class="portfolio2-linkedin-container">
-              <img
-                src="public/playground_assets/emailcontainer1122-0vvp-700w.png"
-                alt="LinkedinContainer1122"
-                class="portfolio2-linkedin-container1"
-              />
-              <span class="portfolio2-text">
-                <span><a href="https://www.linkedin.com/in/luigiquiros/" target="_blank" rel="noopener noreferrer">Arnold Quiros</a></span>
-              </span>
-              <span class="portfolio2-text002"><span>LinkedIn</span></span>
+    <main>
+        <section id="introduction">
+            <!-- Introduction section -->
+            <h2>Introduction</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl sed ultrices aliquet, nunc nunc tincidunt nunc, vitae lacinia nunc nunc nec nunc.</p>
+        </section>
+
+        <section id="experience">
+            <!-- Experience section -->
+            <h2>Experience</h2>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Experience 1</h3>
+                        <p>Date 1</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Experience 2</h3>
+                        <p>Date 2</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Experience 3</h3>
+                        <p>Date 3</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Experience 4</h3>
+                        <p>Date 4</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Experience 5</h3>
+                        <p>Date 5</p>
+                    </div>
+                </li>
+            </ul>        
+        </section>
+
+        <!-- FILEPATH: /d:/Documents/GitHub/website2/index.html -->
+        <!-- 
+            This section displays a list of certifications.
+            Each certification is represented by a certification-group div.
+            The div contains the certification title, an image, and a short description.
+            The image is displayed with a width of 600 pixels and a height of 400 pixels.
+        -->
+        <section id="certifications">
+            <!-- Certifications section -->
+            <h2>Certifications</h2>
+            <div class="certification-group">
+                <h3>Certification Title 1</h3>
+                <img src="certification1.jpg" alt="Certification 1" width="600" height="400">
+                <p>Short description of Certification 1</p>
             </div>
-            <div class="portfolio2-email">
-              <img
-                src="public/playground_assets/emailcontainer1122-0vvp-700w.png"
-                alt="EmailContainer1122"
-                class="portfolio2-email-container"
-              />
-              <span class="portfolio2-text004">
-                <span><a href="mailto:arnoldlquiros@gmail.com" target="_blank" rel="noopener noreferrer">Arnold Quiros</a></span>
-              </span>
-              <span class="portfolio2-text006"><span>Email</span></span>
+            <div class="certification-group">
+                <h3>Certification Title 2</h3>
+                <img src="certification2.jpg" alt="Certification 2" width="600" height="400">
+                <p>Short description of Certification 2</p>
             </div>
-            <div class="portfolio2-facebook">
-              <img
-                src="public/playground_assets/fbcontainer1122-v1y-700w.png"
-                alt="FBContainer1122"
-                class="portfolio2-f-container"
-              />
-              <span class="portfolio2-text008">
-                <span><a href="http://fb.me/arnoldquiross" target="_blank" rel="noopener noreferrer">Arnold Luigi Quiros</a></span>
-              </span>
-              <span class="portfolio2-text010"><span>Facebook</span></span>
+            <div class="certification-group">
+                <h3>Certification Title 3</h3>
+                <img src="certification3.jpg" alt="Certification 3" width="600" height="400">
+                <p>Short description of Certification 3</p>
             </div>
-            <span class="portfolio2-text012">
-              <span>Just a ping Away</span>
-            </span>
-            <span class="portfolio2-text014"><span>Contacts</span></span>
-          </div>
-          <div class="portfolio2-certifications" id="portfolio2-certifications">
-            <img
-              src="public/playground_assets/image21126-i31o-400h.png"
-              alt="image21126"
-              class="portfolio2-image2"
-            />
-            <img
-              src="public/playground_assets/image31126-eaqo-400h.png"
-              alt="image31126"
-              class="portfolio2-image3"
-            />
-            <img
-              src="public/playground_assets/image41126-v4lc-400h.png"
-              alt="image41126"
-              class="portfolio2-image4"
-            />
-            <span class="portfolio2-text016"><span>Certifications</span></span>
-          </div>
-          <div class="portfolio2-technology" id="portfolio2-technology">
-            <div class="portfolio2-networkand-cloud">
-              <img
-                src="public/playground_assets/rectangle81126-m2fc-200h.png"
-                alt="Rectangle81126"
-                class="portfolio2-rectangle8"
-              />
-              <img
-                src="public/playground_assets/rectangle91126-lvx-200h.png"
-                alt="Rectangle91126"
-                class="portfolio2-rectangle9"
-              />
-              <span class="portfolio2-text018">
-                <span>Network and Cloud</span>
-              </span>
-              <span class="portfolio2-text020">
-                <span>
-                  Some experiences with database products such as MySQL,
-                  PostgreSQL, and MonggoDB
-                </span>
-              </span>
+            <div class="certification-group">
+                <h3>Certification Title 4</h3>
+                <img src="certification4.jpg" alt="Certification 4" width="600" height="400">
+                <p>Short description of Certification 4</p>
             </div>
-            <div class="portfolio2-databases">
-              <img
-                src="public/playground_assets/rectangle81127-jmex-200h.png"
-                alt="Rectangle81127"
-                class="portfolio2-rectangle81"
-              />
-              <span class="portfolio2-text022"><span>Databases</span></span>
-              <span class="portfolio2-text024">
-                <span>
-                  Some experiences with database products such as MySQL,
-                  PostgreSQL, and MonggoDB
-                </span>
-              </span>
+            <div class="certification-group">
+                <h3>Certification Title 5</h3>
+                <img src="certification5.jpg" alt="Certification 5" width="600" height="400">
+                <p>Short description of Certification 5</p>
             </div>
-            <div class="portfolio2-mobile-applications">
-              <img
-                src="public/playground_assets/rectangle81127-1gzi-200h.png"
-                alt="Rectangle81127"
-                class="portfolio2-rectangle82"
-              />
-              <span class="portfolio2-text026">
-                <span>Mobile Applications</span>
-              </span>
-              <span class="portfolio2-text028">
-                <span>
-                  Knowledge on Kotlin. Integrate APIs such as Firebase Auth,
-                  Firestore, QR, Goole Maps services, etc.
-                </span>
-              </span>
-            </div>
-            <div class="portfolio2-operating-system">
-              <span class="portfolio2-text030">
-                <span>
-                  Heavy Experience with Windows and medium experience with
-                  Ubuntu and TrueNAS
-                </span>
-              </span>
-              <span class="portfolio2-text032">
-                <span>Operating Systems</span>
-              </span>
-              <img
-                src="public/playground_assets/truenas1128-55tz-200h.png"
-                alt="TrueNas1128"
-                class="portfolio2-true-nas"
-              />
-              <img
-                src="public/playground_assets/windows1128-xq4o-200w.png"
-                alt="Windows1128"
-                class="portfolio2-windows"
-              />
-              <img
-                src="public/playground_assets/ubuntu1128-pcd-200h.png"
-                alt="Ubuntu1128"
-                class="portfolio2-ubuntu"
-              />
-            </div>
-            <div class="portfolio2-desktop-applications">
-              <img
-                src="public/playground_assets/rectangle81129-eks-200h.png"
-                alt="Rectangle81129"
-                class="portfolio2-rectangle83"
-              />
-              <img
-                src="public/playground_assets/rectangle181129-dljs-200h.png"
-                alt="Rectangle181129"
-                class="portfolio2-rectangle18"
-              />
-              <span class="portfolio2-text034">
-                <span>Desktop Applications</span>
-              </span>
-              <span class="portfolio2-text036">
-                <span>
-                  Experienced coding in Python and Java under DLSU’s Programming
-                  Courses.
-                </span>
-              </span>
-            </div>
-            <div class="portfolio2-web-applications">
-              <img
-                src="public/playground_assets/rectangle81129-ca9k-200h.png"
-                alt="Rectangle81129"
-                class="portfolio2-rectangle84"
-              />
-              <span class="portfolio2-text038">
-                <span>Web Applications</span>
-              </span>
-              <span class="portfolio2-text040">
-                <span>
-                  Coding experience in html + css, php, expressjs and nodejs
-                </span>
-              </span>
-            </div>
-            <span class="portfolio2-text042"><span>More About Me</span></span>
-            <span class="portfolio2-text044"><span>Experience</span></span>
-          </div>
-          <div class="portfolio2-education" id="portfolio2-education">
-            <img
-              src="public/playground_assets/right1121-jt3n-700h.png"
-              alt="Right1121"
-              class="portfolio2-right"
-            />
-            <div class="portfolio2-left">
-              <span class="portfolio2-text046"><span>More About Me</span></span>
-              <span class="portfolio2-text048"><span>Education</span></span>
-              <div class="portfolio2-side-line">
-                <img
-                  src="public/playground_assets/ellipse21121-pcpq-200h.png"
-                  alt="Ellipse21121"
-                  class="portfolio2-ellipse2"
-                />
-                <img
-                  src="public/playground_assets/ellipse41121-mud-200h.png"
-                  alt="Ellipse41121"
-                  class="portfolio2-ellipse4"
-                />
-                <img
-                  src="public/playground_assets/ellipse61121-z6x-200h.png"
-                  alt="Ellipse61121"
-                  class="portfolio2-ellipse6"
-                />
-                <img
-                  src="public/playground_assets/ellipse81121-oojv-200h.png"
-                  alt="Ellipse81121"
-                  class="portfolio2-ellipse8"
-                />
-                <img
-                  src="public/playground_assets/ellipse31121-tkah-200h.png"
-                  alt="Ellipse31121"
-                  class="portfolio2-ellipse3"
-                />
-                <img
-                  src="public/playground_assets/ellipse51121-m0q7-200h.png"
-                  alt="Ellipse51121"
-                  class="portfolio2-ellipse5"
-                />
-                <img
-                  src="public/playground_assets/ellipse71121-nzzh-200h.png"
-                  alt="Ellipse71121"
-                  class="portfolio2-ellipse7"
-                />
-                <img
-                  src="public/playground_assets/ellipse91121-ajxa-200h.png"
-                  alt="Ellipse91121"
-                  class="portfolio2-ellipse9"
-                />
-                <img
-                  src="public/playground_assets/line11121-i2e3.svg"
-                  alt="Line11121"
-                  class="portfolio2-line1"
-                />
-                <img
-                  src="public/playground_assets/line21121-mdhq.svg"
-                  alt="Line21121"
-                  class="portfolio2-line2"
-                />
-                <img
-                  src="public/playground_assets/line31121-a5e.svg"
-                  alt="Line31121"
-                  class="portfolio2-line3"
-                />
-              </div>
-              <span class="portfolio2-text050">
-                <span>Manresa School (2015 -2016)</span>
-              </span>
-              <span class="portfolio2-text052">
-                <span>Junior High School</span>
-              </span>
-              <span class="portfolio2-text054">
-                <span>
-                  Manresa School is a private, co-educational Roman Catholic
-                  school in Parañaque.
-                </span>
-              </span>
-              <span class="portfolio2-text056">
-                <span>De La Salle University Manila (2017-19)</span>
-              </span>
-              <span class="portfolio2-text058">
-                <span>Senior High School</span>
-              </span>
-              <span class="portfolio2-text060">
-                <span>Graduated Senior High School under ‘STEM’ strand</span>
-              </span>
-              <span class="portfolio2-text062">
-                <span>De La Salle University Manila (2019-Present)</span>
-              </span>
-              <span class="portfolio2-text064"><span>University</span></span>
-              <span class="portfolio2-text066">
-                <span>
-                  Took Bachelor of Science - BS, Information Technology
-                </span>
-              </span>
-            </div>
-          </div>
-          <div class="portfolio2-skills">
-            <div class="portfolio2-right1">
-              <img
-                src="public/playground_assets/image11121-wcyd-300h.png"
-                alt="image11121"
-                class="portfolio2-image1"
-              />
-            </div>
-            <div class="portfolio2-left1">
-              <span class="portfolio2-text068">
-                <span>I Strive to be a Systems Administrator</span>
-              </span>
-              <span class="portfolio2-text070">
-                <span>
-                  <span>
-                    Growing up, I was always had the role from my family, neighbors,
-                    and schoolmates as the person to manage and troubleshoot
-                    networks, desktops, servers, and the like.
-                  </span>
-                  <br />
-                  <span></span>
-                  <br />
-                  <span>
-                    I have obtained multiple certifications to further my
-                    knowledge and expertise for my desired postion
-                  </span>
-                </span>
-              </span>
-            </div>
-          </div>
-          <div class="portfolio2-about">
-            <img
-              src="public/playground_assets/luithumbsup11121-r79c-500h.png"
-              alt="LuiThumbsUp11121"
-              class="portfolio2-lui-thumbs-up1"
-            />
-            <span class="portfolio2-text077"><span>About Me</span></span>
-            <span class="portfolio2-text079">
-              <span>Systems Administrator</span>
-            </span>
-            <span class="portfolio2-text081">
-              <span>
-                <span>
-                  Hi I'm Luigi, an undergraduate student of De La Salle University taking
-                  BS - Information Technology. 
-                </span>
-                <br />
-                <span></span>
-                <br />
-                <span>
-                  I enjoy learning all the different branches of Information Technology
-                  whether it may be Networking, Software Development, Mobile Development
-                  Web Development, Cloud computing, and many more.
-                </span>
-              </span>
-            </span>
-          </div>
-          <div class="portfolio2-hero-section" id="portfolio2-hero-section">
-            <div class="portfolio2-hero-left">
-              <span class="portfolio2-text088">
-                <span>
-                  Do not leave your reputation to chance or gossip; it is your
-                  life's artwork, and you must craft it, hone it, and display it
-                  with the care of an artist.
-                </span>
-              </span>
-              <span class="portfolio2-text090">
-                <span>Systems Administrator, PC Enthusiast, and many more</span>
-              </span>
-            </div>
-            <img
-              src="public/playground_assets/nobg11121-dfb-700h.png"
-              alt="nobg11121"
-              class="portfolio2-nobg1"
-            />
-          </div>
-          <div class="portfolio2-navbar">
-            <div class="portfolio2-menu">
-              <span class="portfolio2-text096"><span><a href="#">Home</a></span></span>
-              <span class="portfolio2-text098"><span><a href="#portfolio2-technology">Experience</a></span></span>
-              <span class="portfolio2-text100"><span><a href="#portfolio2-certifications">Certifications</a></span></span>
-              <span class="portfolio2-text102"><span><a href="#portfolio2-education">Education</a></span></span>
-              <span class="portfolio2-text6969"><span><a href="#portfolio2-contact-us">Contact Me</a></span></span>
-            </div>  
-            <div class="portfolio2-logo">
-              <div class="portfolio2-blackand-white-collection1">
-                <img
-                  src="public/playground_assets/vector1121-b2zg.svg"
-                  alt="Vector1121"
-                  class="portfolio2-vector"
-                />
-                <img
-                  src="public/playground_assets/vector1121-sco.svg"
-                  alt="Vector1121"
-                  class="portfolio2-vector1"
-                />
-                <img
-                  src="public/playground_assets/vector1121-mhc.svg"
-                  alt="Vector1121"
-                  class="portfolio2-vector2"
-                />
-                <img
-                  src="public/playground_assets/vector1121-02jn.svg"
-                  alt="Vector1121"
-                  class="portfolio2-vector3"
-                />
-                <img
-                  src="public/playground_assets/vector1121-9lzi.svg"
-                  alt="Vector1121"
-                  class="portfolio2-vector4"
-                />
-                <img
-                  src="public/playground_assets/vector1121-tomr.svg"
-                  alt="Vector1121"
-                  class="portfolio2-vector5"
-                />
-                <img
-                  src="public/playground_assets/vector1121-ewsp.svg"
-                  alt="Vector1121"
-                  class="portfolio2-vector6"
-                />
-              </div>
-              <span class="portfolio2-text108"><span>Luigi Quiros</span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+        </section>
+
+        <!-- FILEPATH: /d:/Documents/GitHub/website2/index.html -->
+        <!-- 
+            This section represents the skills section of the webpage.
+            It contains a heading "Skills" and a paragraph describing the skills.
+        -->
+        <section id="skills">
+            <!-- Skills section -->
+            <h2>Skills</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl sed ultrices aliquet, nunc nunc tincidunt nunc, vitae lacinia nunc nunc nec nunc.</p>
+        </section>
+
+        <!-- FILEPATH: /d:/Documents/GitHub/website2/index.html -->
+        <!-- 
+            This section represents the "Contact Me" section of the webpage.
+            It contains a heading with the text "Contact Me" and a paragraph with some placeholder text.
+        -->
+        <section id="contact">
+            <!-- Contact Me section -->
+            <h2>Contact Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl sed ultrices aliquet, nunc nunc tincidunt nunc, vitae lacinia nunc nunc nec nunc.</p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer section -->
+        <p>&copy; 2022 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
 </html>
