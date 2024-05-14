@@ -1,282 +1,247 @@
-<!-- FILEPATH: /d:/Documents/GitHub/website2/index.html -->
-<!-- 
-    This is the HTML code for the index.html file of a portfolio website.
-    It includes the structure and styling for the different sections of the website, such as the header, introduction, experience, certifications, skills, and contact sections.
-    The code also includes a navigation bar, a timeline for displaying experience, and certification groups with images and descriptions.
-    The footer section contains the copyright information.
--->
-<!-- FILEPATH: /d:/Documents/GitHub/website2/index.html -->
-<!-- 
-    This is the HTML code for the index.html file of a portfolio website.
-    It includes the structure and styling for the different sections of the website, such as the header, introduction, experience, certifications, skills, and contact sections.
-    The code also includes a navigation bar, a timeline for displaying experience, and certification groups with images and descriptions.
-    The footer section contains the copyright information.
--->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Existing styles */
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-        body {
-            background-color: #6c7a89;
-            color: #e0e7e9;
-            font-family: 'Open Sans', sans-serif;
-            padding: 0;
-            margin: 0;
-        }
+ 
+  <title>
+    Arnold Luigi Quiros | IT Profesional
+  </title>
 
-        footer {
-            text-align: center;
-        }
-
-        nav {
-            background-color: #a3c6c4;
-            height: 5vh;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        nav ul {
-            display: flex;
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin-right: 10px;
-        }
-
-        nav ul li a {
-            color: #354649;
-            padding: 10px;
-            text-decoration: none;
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        nav ul li a:hover {
-            background-color: #6c7a89;
-        }
-
-        section {
-            border-top: 1px solid #354649;
-            padding-top: 20px;
-            margin-left: 20px; /* Added left margin */
-        }
-
-        /* New styles for the vertical timeline effect */
-
-        .timeline {
-            position: relative;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .timeline:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 10px;
-            width: 2px;
-            height: 100%;
-            background-color: white;
-        }
-
-        .timeline-point {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 20px;
-            height: 20px;
-            background-color: white;
-            border-radius: 50%;
-            left: 0px;
-        }
-
-        .timeline li {
-            position: relative;
-            min-height: 50px;
-            margin-bottom: 50px;
-        }
-
-        .timeline li:before,
-        .timeline li:after {
-            content: '';
-            display: table;
-        }
-
-        .timeline li:after {
-            clear: both;
-        }
-
-        .timeline-content {
-            position: relative;
-            width: 50%;
-            padding: 20px;
-            background-color: #354649;
-            color: white;
-            border-radius: 10px;
-            margin-left: 120px; /* Updated: Increase the left spacing */
-            float: left; /* Updated: Align the content to the left */
-        }
-
-        .timeline-content h3,
-        .timeline-content p {
-            margin: 0;
-        }
-
-        /* New styles for the experience uls */
-        .timeline-content ul {
-            padding-left: 10px; /* Add left padding */
-            margin-left: 10px; /* Add left margin */
-        }
-
-        /* Responsive styles */
-
-        @media (max-width: 768px) {
-            .timeline-content {
-                width: 100%;
-                margin-left: 0;
-                float: none;
-            }
-        }
-    </style>
-
-    </style>
+  <meta name="description" content="De La Salle Graduate, Information Technology Major, Oracle Employee">
+  <meta name="keywords" content="Arnold Luigi Quiro,, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-    <header>
-        <!-- Top/Header section -->
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="introduction">
-            <!-- Introduction section -->
-            <h2>Introduction</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl sed ultrices aliquet, nunc nunc tincidunt nunc, vitae lacinia nunc nunc nec nunc.</p>
-        </section>
+  <!-- ***** Header ***** -->
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box rowheader">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <span>Arnold Luigi Quiros</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>IT Professional based in Parañaque, Philippines.</p>
+        <a href="#contact" class="btn btn--green">Get in touch</a>
+      </div>
+    </div>
+  </header>
 
-        <section id="experience">
-            <!-- Experience section -->
-            <h2>Experience</h2>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-point"></div>
-                    <div class="timeline-content">
-                        <h3>Experience 1</h3>
-                        <p>Date 1</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-point"></div>
-                    <div class="timeline-content">
-                        <h3>Experience 2</h3>
-                        <p>Date 2</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-point"></div>
-                    <div class="timeline-content">
-                        <h3>Experience 3</h3>
-                        <p>Date 3</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-point"></div>
-                    <div class="timeline-content">
-                        <h3>Experience 4</h3>
-                        <p>Date 4</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-point"></div>
-                    <div class="timeline-content">
-                        <h3>Experience 5</h3>
-                        <p>Date 5</p>
-                    </div>
-                </li>
-            </ul>        
-        </section>
+  <main role="main">
 
-        <!-- FILEPATH: /d:/Documents/GitHub/website2/index.html -->
-        <!-- 
-            This section displays a list of certifications.
-            Each certification is represented by a certification-group div.
-            The div contains the certification title, an image, and a short description.
-            The image is displayed with a width of 600 pixels and a height of 400 pixels.
-        -->
-        <section id="certifications">
-            <!-- Certifications section -->
-            <h2>Certifications</h2>
-            <div class="certification-group">
-                <h3>Certification Title 1</h3>
-                <img src="certification1.jpg" alt="Certification 1" width="600" height="400">
-                <p>Short description of Certification 1</p>
+        <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              I hold a Bachelor of Science in Information Technology from De La Salle University - Manila and currently work as an Associate Technical Support Engineer for Oracle.
+              <br><br>
+              With hands-on experience as a Systems and Social Media Support Intern at Kenvue Inc., my skills include Linux and Windows system administration, networking, and IT operations. I'm certified by Cisco and Coursera and excel in adapting to new technologies and tasks.
+            </p>
+            <button class="btn btn--green" onclick = "downloadFile()"> Download Resume </button>
+          </div>
+
+          <div class="about__photo-container">
+            <img class="about__photo" src="./images/gradp.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Portfolio Template</h3>
+              <p>
+                A free Open Source Portfolio for anyone to use for free.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>Parcel</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
             </div>
-            <div class="certification-group">
-                <h3>Certification Title 2</h3>
-                <img src="certification2.jpg" alt="Certification 2" width="600" height="400">
-                <p>Short description of Certification 2</p>
+            <div class="work__image-box">
+              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
             </div>
-            <div class="certification-group">
-                <h3>Certification Title 3</h3>
-                <img src="certification3.jpg" alt="Certification 3" width="600" height="400">
-                <p>Short description of Certification 3</p>
-            </div>
-            <div class="certification-group">
-                <h3>Certification Title 4</h3>
-                <img src="certification4.jpg" alt="Certification 4" width="600" height="400">
-                <p>Short description of Certification 4</p>
-            </div>
-            <div class="certification-group">
-                <h3>Certification Title 5</h3>
-                <img src="certification5.jpg" alt="Certification 5" width="600" height="400">
-                <p>Short description of Certification 5</p>
-            </div>
-        </section>
+          </div>
 
-        <!-- FILEPATH: /d:/Documents/GitHub/website2/index.html -->
-        <!-- 
-            This section represents the skills section of the webpage.
-            It contains a heading "Skills" and a paragraph describing the skills.
-        -->
-        <section id="skills">
-            <!-- Skills section -->
-            <h2>Skills</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl sed ultrices aliquet, nunc nunc tincidunt nunc, vitae lacinia nunc nunc nec nunc.</p>
-        </section>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Calculator</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                eius.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul>
 
-        <!-- FILEPATH: /d:/Documents/GitHub/website2/index.html -->
-        <!-- 
-            This section represents the "Contact Me" section of the webpage.
-            It contains a heading with the text "Contact Me" and a paragraph with some placeholder text.
-        -->
-        <section id="contact">
-            <!-- Contact Me section -->
-            <h2>Contact Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl sed ultrices aliquet, nunc nunc tincidunt nunc, vitae lacinia nunc nunc nec nunc.</p>
-        </section>
-    </main>
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
 
-    <footer>
-        <!-- Footer section -->
-        <p>&copy; 2022 My Portfolio. All rights reserved.</p>
-    </footer>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Notificator</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                eius.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Clients ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Clients</h2>
+        <div class="client__logos">
+          <!-- Add logos of the clients or companies you'have worked with. -->
+          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
+          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
+          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
+          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
+          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
+          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Are you looking for a fast-performing and user-friendly website to
+          represent your product or business? or looking for any kind of
+          consultation? or want to ask questions? or have some advice for me
+          or just want to say "Hi 👋" in any case feel free to Let me know. I
+          will do my best to respond back. 😊 The quickest way to reach out to
+          me is via an email.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
+            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
+            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <p>
+        &copy; 2024 Arnold Luigi Quiros. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
 </body>
+
 </html>
