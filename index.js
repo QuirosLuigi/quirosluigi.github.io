@@ -43,5 +43,5 @@ window.addEventListener("scroll", () => {
 });
 
 function downloadFile() {
-   window.open("./Quiros-Resume.pdf")
+   window.open("https://raw.githubusercontent.com/QuirosLuigi/quirosluigi.github.io/main/Quiros-Resume.pdf")
 }
