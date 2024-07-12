@@ -71,9 +71,9 @@ body {
     font-size: var(--font-size-small);
     font-family: var(--font-stack);
     font-weight: 400;
-    color: var(--white-1);
+    color: var(--black);
     line-height: var(--line-height-normal);
-    background: var(--black);
+    background: var(--white);
     overflow-x: hidden;
 }
 
@@ -153,13 +153,14 @@ h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     line-height: var(--line-height-small);
-    color: var(--white);
+    color: var(--black);
 }
 
 .heading-primary {
     line-height: 1;
     font-size: var(--font-size-huge);
     font-weight: 400;
+    color: var(--white);
 }
 
 @media(max-width: 900px) {
@@ -291,6 +292,7 @@ body:not(.user-is-tabbing) a:focus {
 .btn--green {
     background: var(--green-1);
     transition: all 0.2s;
+    color: var(--white);
     
     
 }
@@ -402,6 +404,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav__items {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#f0e9f2;
     font-weight: bolder;
     font-size: larger;
     display: flex;
@@ -468,7 +471,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header {
     background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/Palawan.png');
+        url('./images/header.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -487,6 +490,7 @@ body:not(.user-is-tabbing) a:focus {
     max-width: var(--container-medium-width);
     font-family: 'Jost', sans-serif;
     font-size: var(--font-size-medium);
+    color: var(--white);
 }
 
 @media(max-width: 500px) {
