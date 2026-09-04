@@ -248,6 +248,24 @@ a {
   margin-bottom: 20px;
 }
 
+.hero-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.text-link {
+  color: var(--mint);
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.text-link:hover {
+  color: var(--text);
+}
+
 .button {
   border-radius: 6px;
   display: inline-flex;
